@@ -38,6 +38,14 @@ public class MyArrayList<T> implements MyList<T> {
     }
 
     /**
+     * Конструктор класса MyArrayList позволяет пользователю самому
+     * определить размер динамического массива.
+     */
+    public MyArrayList(int capacity) {
+        this.elementArray = (T[]) new Object[capacity];
+    }
+
+    /**
      * Метод добавляет элемент в конец списка.
      *
      * @param item Элемент любого типа.
