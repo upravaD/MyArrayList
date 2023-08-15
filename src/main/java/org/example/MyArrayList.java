@@ -25,7 +25,7 @@ import java.util.Comparator;
 
 @SuppressWarnings("unchecked")
 public class MyArrayList<T> implements MyList<T> {
-    private final int DEFAULT_CAPACITY = 10;
+    private static final int DEFAULT_CAPACITY = 10;
     private T[] elementArray;
     private int size;
 
